@@ -1,0 +1,21 @@
+一、thread模块
+
+import threading
+
+threading_obj = threading.Thread([group [, target [, name [, args [, kwargs]]]]])
+- group：暂时无用，未来功能的预留参数
+- target：执行的目标任务名
+- args：以元组的方式给执行任务传参
+        · args参数通过元组(按参数顺序)的方式传参
+- kwargs：以字典方式给执行任务传参
+        · 或使用kwargs参数用字典的形式传参
+- name：线程名，一般不用设置
+
+
+总结：
+threading模块的使用：
+threading_obj = threading.Thread(target=func)       # func  为目标任务名
+
+thread_obj.start()启动线程执行
+
+如何传参（多线程编程.py）
